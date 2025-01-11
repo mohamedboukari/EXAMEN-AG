@@ -44,12 +44,13 @@
                     </div>
                     <div>
                         <label for="name" class="block mb-2 text-sm font-medium text-gray-900">date</label>
-                        <input type="date" name="date" id="date"
+                        <input type="datetime-local" name="date" id="date"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2.5 placeholder-gray-400"
                             formControlName="date" placeholder="date ...">
                         <p *ngIf="formEvent.get('date')?.invalid && formEvent.get('date')?.touched && formEvent.get('date')?.errors?.['required']"
                             class="text-red-500 text-xs ">date is required</p>
-                        <p *ngIf="!isValidDate()" class="text-red-500 text-xs ">date must be in the future</p>
+                        <p *ngIf="!isValidDate() && formEvent.get('date')?.touched" class="text-red-500 text-xs ">date
+                            must be in the future</p>
 
                     </div>
                     <div>

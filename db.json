@@ -1,0 +1,49 @@
+{
+  "events": [
+    {
+      "id": "66",
+      "titre": "essdd",
+      "description": "wwkkws wkjwikw",
+      "lieu": "sss",
+      "date": "2025-01-18",
+      "disponible": true,
+      "nbrMax": 33
+    },
+    {
+      "id": "44",
+      "titre": "sw",
+      "description": "aqq jahja ahajka ",
+      "lieu": "aaaa",
+      "date": "2025-01-12",
+      "disponible": true,
+      "nbrMax": 22
+    },
+    {
+      "id": "2277",
+      "titre": "sskksks",
+      "description": "akaja aqjah",
+      "lieu": "4rfv",
+      "date": "2025-01-12",
+      "disponible": false,
+      "nbrMax": 66
+    },
+    {
+      "id": "88",
+      "titre": "ioiju",
+      "description": "kshgsfssmnns",
+      "lieu": "gggg",
+      "date": "2025-01-19",
+      "disponible": true,
+      "nbrMax": 88
+    },
+    {
+      "id": "9",
+      "titre": "gyvgv",
+      "description": "ngvv vgg gvgv",
+      "lieu": "www",
+      "date": "2025-01-12",
+      "disponible": true,
+      "nbrMax": 77
+    }
+  ]
+}

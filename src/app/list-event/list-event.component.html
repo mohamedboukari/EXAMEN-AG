@@ -1,0 +1,63 @@
+<div class="p-6">
+    <div class="flex justify-between ">
+        <h4 class="text-3xl text-indigo-500">events</h4>
+
+    </div>
+
+
+    <input placeholder="search..." [value]="search"
+        class="outline-none border-gray-300 border placeholder:text-gray-600 rounded-lg p-2" [(ngModel)]="search"
+        (ngModelChange)="updateItems()" />
+
+    <div class=" grid  grid-cols-[repeat(auto-fill,minmax(384px,1fr))]  h-max items-center justify-center gap-3 ">
+        <div *ngFor="let item of events"
+            class="max-w-sm  bg-white p-4 rounded-lg shadow hover:border hover:border-gray-400">
+            <div>
+                <div *ngIf="item.disponible===false" class="bg-red-100 p-4 rounded-md">
+                    <h5 class=" py-4 text-gray-400">id:{{
+                        item.id
+                        }}
+                    </h5>
+                    <p class=" py-4 text-gray-400">titre: {{
+                        item.titre
+                        }}
+                    </p>
+
+                    <p class=" py-4 text-gray-400">description:{{ item.description }}</p>
+                    <p class=" py-4 text-gray-400">lieu: {{item.lieu}}</p>
+                    <p class=" py-4 text-gray-400">disponible: {{item.disponible }}</p>
+                    <p class=" py-4 text-gray-400">date: {{item.date }}</p>
+                    <p class=" py-4 text-gray-400">nbrMax: {{item.nbrMax }}</p>
+
+
+                    <button class=" rounded-md bg-red-600 px-3 text-white py-1.5" (click)="handleDelete(item.id)">
+                        delete
+                    </button>
+                </div>
+                <div *ngIf="item.disponible===true" class="bg-green-100 p-4 rounded-md">
+                    <h5 class=" py-4 text-gray-400">id:{{
+                        item.id
+                        }}
+                    </h5>
+                    <p class=" py-4 text-gray-400">titre: {{
+                        item.titre
+                        }}
+                    </p>
+
+                    <p class=" py-4 text-gray-400">description:{{ item.description }}</p>
+                    <p class=" py-4 text-gray-400">lieu: {{item.lieu}}</p>
+                    <p class=" py-4 text-gray-400">disponible: {{item.disponible }}</p>
+                    <p class=" py-4 text-gray-400">date: {{item.date }}</p>
+                    <p class=" py-4 text-gray-400">nbrMax: {{item.nbrMax }}</p>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <button (click)="handleCal()" class="bg-blue-500 rounded-lg px-3 py-2 mt-5 text-white">nbr event dispo</button>
+    <p *ngIf="nbrdis>-1">{{nbrdis}}</p>
+</div>

@@ -64,6 +64,12 @@
                             class="text-red-500 text-xs ">nbrmax is > 0</p>
 
                     </div>
+                    <div class="flex gap-2 items-center sm:col-span-2">
+                        <label for="disponible"
+                            class="block  text-sm font-medium text-gray-900 cursor-pointer">Disponible</label>
+                        <input type="checkbox" id="disponible" formControlName="disponible"
+                            class="rounded text-indigo-600 focus:ring-indigo-500 border-gray-300 w-5 h-5 cursor-pointer">
+                    </div>
                     <div class="sm:col-span-2">
                         <label for="description"
                             class="block mb-2 text-sm font-medium text-gray-900">Description</label>
@@ -77,11 +83,7 @@
 
                     </div>
                 </div>
-                <div>
-                    <label for="disponible" class="block mb-2 text-sm font-medium text-gray-900">Disponible</label>
-                    <input type="checkbox" id="disponible" formControlName="disponible"
-                        class="rounded text-indigo-600 focus:ring-indigo-500 border-gray-300">
-                </div>
+
 
 
                 <button type="submit"
